@@ -3,10 +3,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Example 1</title>
-<script type="text/javascript" src="hello.js">
+<script type="text/javascript">
+  var name = prompt("What is your name?", "Please enter your name here.");
+  var message = "<p>Hello <strong> " + name +  "</strong>. ";
+  var colour = prompt("What is your favourite colour?", "Mine is purple.");
+  message += "I see your favourite colour is <strong>" + colour + "</strong>.</p>";
+  
 </script>
 </head>
 
 <body>
+  <script type="text/javascript">
+    document.write(message);
+  </script>
+    
 </body>
 </html>
