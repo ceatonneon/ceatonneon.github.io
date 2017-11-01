@@ -1,0 +1,95 @@
+#wrapper {
+	background: left;
+	width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+}
+body {
+	margin: 100px;
+	font: 62.5% "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background: #DEDACA url(images/bg_page.gif) repeat-y center top;
+}
+
+#banner {
+	background: #7799AA url(images/bg_banner.png) no-repeat right top;
+	height: 100px;
+	width: 760px;
+	position: relative;
+}
+#main h1 {
+	font-size: 2em;
+	border-bottom: 2px solid #335566;
+	text-transform: uppercase;
+	color: #223344;
+}
+#main {
+	margin-right: 15px;
+	margin-left: 15px;
+	font-size: 14px;
+}
+#banner #mainNav {
+	color: #FFFFFF;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#lessons {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.5em;
+	border-left: 1px solid #223344;
+	padding: 3px 7px 2px;
+	float: left;
+	border-top: 1px solid #DEDACA;
+}
+
+#mainNav li {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.2em;
+	border-left: 1px solid #223344;
+	padding: 3px 7px 2px;
+	float: left;
+	border-top: 1px solid #DEDACA;
+}
+
+#mainNav a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+td, th {
+	padding: 3px 3px 3px 10px;
+	text-align: left;
+	border: 1px solid #7799AA;
+}
+th {
+	background: url(images/bg_th.png) repeat-x;
+	color: #333333;
+}
+
+table { border-collapse:collapse;}
+.odd {
+	background-color: #F3EEDF;
+}
+.even {
+	background: #DBE4E8;
+}
+#main .box, .hidebox {
+	background: #DEDACA;
+	display: block;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 2px solid #7699AA;
+	width: 200px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#col1, #col2, #col3 {
+	float: left;
+	width: 240px;
+}
