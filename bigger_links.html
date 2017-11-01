@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Bigger Links</title>
+
+<link href="css/site.css" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">
+.bigLink a {
+	text-decoration:none;
+}
+.bigLink {
+	padding: 10px;
+	border: 1px dotted #996;
+	margin-right: 25px;
+	float: left;
+	width: 175px;
+	cursor: pointer;
+}
+
+.bigLinkHover {
+	background-color: #C90;
+}
+.bigLinkHover * {
+	color: white;
+}
+
+</style>
+
+
+<script type="text/javascript" src="js/jquery-1.10.2.js">
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('.bigLink').click(function() {
+		var url = $(this).find('a').attr('href');
+		window.location=url;
+	});
+	$('.bigLink').mouseover(function() {
+	$(this).addClass('bigLinkHover');
+});
+	$('.bigLink').mouseout(function() {
+	$(this).removeClass('bigLinkHover');
+});
+	});
+
+</script>
+
+
+</head>
+
+
+<body>
+
+<h1>Bigger Links</h1>
+
+<div class="bigLink">
+<h2>Crazy Big Link!</h2>
+<p><a href="http://www.google.com">Google</a></p>
+</div>
+<div class="bigLink">
+<h2>Crazy Big Link!</h2>
+<p><a href="local_file1.html">Local One</a></p>
+</div>
+<div class="bigLink">
+<h2>Crazy Big Link!</h2>
+<p><a href="local_file2.html">Local Two</a></p>
+</div>
+</body>
+
+</html>

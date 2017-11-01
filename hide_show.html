@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hide and Show Page Elements</title>
+<link href="global.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery-1.10.2.js">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#clickHide').click(function(){
+        $('#clickHideBox').hide();
+      });
+      $('#mouseHide').mouseover(function(){
+        $('#mouseHideBox').hide();
+      });
+      $('#dbClickHide').dblclick(function(){
+        $('#dbClickHideBox').hide();
+      });
+      $('#clickShow').click(function(){
+        $('#clickShowBox').show();
+      });
+      $('#mouseShow').mouseover(function(){
+        $('#mouseShowBox').show();
+      });
+      $('#dbClickShow').dblclick(function(){
+        $('#dbClickShowBox').show();
+      });
+      $('#clickHS').click(function(){
+        $('#clickHSBox').toggle();
+      });
+      $('#mouseHS').hover(function(){
+            $('#mouseHSBox').show();
+          },
+          function(){
+            $('#mouseHSBox').hide();
+        });
+      $('.hide').hide();
+    });
+  </script>
+</head>
+
+<body><div id="wrapper">
+<div id="main">
+  <h1>
+    Hiding &amp; Showing Page Elements
+  </h1>
+  <div id="col1">
+  <h2>Hiding</h2>
+  <p id="clickHide">Click on me <span id="clickHideBox" class="box">Content to hide</span></p>
+  <p id="mouseHide">Mouse over me <span id="mouseHideBox" class="box">Content to hide</span></p>
+  <p id="dbClickHide">Double-click on me <span id="dbClickHideBox" class="box">Content to hide</span></p>
+  </div>
+  <div id="col2">
+  <h2>Showing</h2>
+  <p id="clickShow">Click on me <span id="clickShowBox" class="hide box">Content to show</span></p>
+  <p id="mouseShow">Mouse over me <span id="mouseShowBox" class="hide box">Content to show</span></p>
+  <p id="dbClickShow">Double-click on me <span id="dbClickShowBox" class="hide box">Content to show</span></p>
+  </div>
+  <div id="col3">
+<h2>Showing and Hiding</h2>
+<p id="clickHS">Click on me <span id = "clickHSBox" class="hide box">Content to show and hide</span></p>
+<p id="mouseHS">Mouse over me <span id="mouseHSBox" class="hide box">Content to show and hide</span></p>
+</div>
+</div>
+</div>
+</body>
+</html>

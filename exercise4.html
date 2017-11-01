@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Exercise Four</title>
+  <link href="css/mine.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+	$('#sameas').click(function(){
+
+	if ($('#sameascheck').prop('checked')==true) {
+		$('#shipping').slideUp();
+	} else {
+	$('#shipping').slideDown();
+	}
+    });
+});
+  </script>
+</head>
+<body>
+  <div>
+    <h1>Billing and Shipping Information</h1>
+    <p>Please complete the following information.</p>
+<div class="col1">
+    <h2>Billing Address:</h2>
+
+	<div>
+          <form id="billing" class="billing" name="billing" method="post" >
+            <label for="nameBilling" class="words">Name:</label>
+            <input type="text" id="nameBilling" class="formBox">
+            <br>
+            <label for="addressBilling" class="words">Address:</label>
+            <input type="text" id="addressBilling" class="formBox">
+            <br>
+            <label for="cityBilling" class="words">City:</label>
+            <input type="text" id="cityBilling" class="formBox">
+            <br>
+            <label for="provBilling" class="words">State or Province:</label>
+            <input type="text" id="postalBilling" class="formBox">
+            <br>
+            <label for="postalBilling" class="words">Zip or Postal Code:</label>
+            <input type="text" id="postalBilling" class="formBox">
+            <br>
+            <label for="countryBilling" class="words">Country:</label>
+            <input type="text" id="countryBilling" class="formBox">
+          </form>
+	</div>
+</div>
+<div class="col2">
+<h2>Shipping Address: </h2>
+<form id="sameas"><span class="sameas2">Same as Billing Address:</span><input type="checkbox" id="sameascheck" unchecked>
+</form>
+
+	<div>
+	     <form id="shipping" class="shipping" name="shipping" method="post" >
+            <label for="nameShipping" class="words">Name:</label>
+            <input type="text" id="nameShipping" class="formBox">
+            <br>
+            <label for="addressShipping" class="words">Address:</label>
+            <input type="text" id="addressShipping" class="formBox">
+            <br>
+            <label for="cityShipping" class="words">City:</label>
+            <input type="text" id="cityShipping" class="formBox">
+            <br>
+            <label for="provShipping" class="words">State or Province:</label>
+            <input type="text" id="postalShipping" class="formBox">
+            <br>
+            <label for="postalShipping" class="words">Zip or Postal Code:</label>
+            <input type="text" id="postalShipping" class="formBox">
+            <br>
+            <label for="countryShipping" class="words">Country:</label>
+            <input type="text" id="countryShipping" class="formBox">
+          </form>	
+	</div>
+      </div>
+    </div>
+
+</body>

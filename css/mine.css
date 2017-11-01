@@ -1,0 +1,67 @@
+body {
+	background: #89A6A8 url(../images/bg.png) repeat-y center top;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.billing{
+	background:#9FF;
+	color:#06C;
+	width: 350px;
+	border: #000, thick, solid;
+	margin: 40px;
+	padding: 15px;
+}
+.shipping{
+	background:#9FF;
+	color:#06C;
+	width: 350px;
+	border: #000, thick, solid;
+	margin: 40px;
+	margin-top: 20px;
+	padding: 15px;
+}
+h2 {font-size: 18pt;
+	margin:0px;}
+p {font-size: 12pt;}
+
+.col1 {
+	border: #000, thick, solid;
+	float: left;
+	margin: 20px;
+	padding: 5px;
+	width: 550px;
+}
+
+.col2 {
+	border: #000, thick, solid;
+	float: right;
+	margin: 20px;
+	padding: 5px;
+	width: 550px;
+}
+
+.formBox {
+	width: 200px;
+	border: #000000, medium, solid;
+	margin-left: 150px;
+	}
+
+.words {
+	width: 150px;
+	float: left;
+
+	}
+
+#sameas {
+	width: 350px;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	
+}
+.sameas2 {
+	font-size: 12pt;
+}

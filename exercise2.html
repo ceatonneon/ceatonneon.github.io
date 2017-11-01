@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lesson 2 Exercise</title>
+<link href="exercise.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.2.js">
+</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js")>
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#emailForm').hide();
+    $('#signNew').toggle(
+      function()  {
+        $('#emailForm').slideDown();
+        $('#signNew').addClass('open');
+        $('#signNew').removeClass('closed');
+      },
+      function() {
+      $('#emailForm').slideUp();
+      $('#signNew').addClass('closed');
+      $('#signNew').removeClass('open');
+      }
+    );
+  });
+</script>
+</head>
+
+<body>
+<h1>Lesson 2 Exercise
+</h1>
+<div id="signup">
+<h2 id="signNew" class="closed">Sign Up For Our Newsletter</h2>
+<form id="emailForm">
+
+  <label for="email">E-MaiL Address</label>
+  <input type="text" name="email" id="email" />
+
+
+  <p>
+    <input type="submit" name="button" id="button" value="signup" />
+  </p>
+
+</form>
+</div>
+</body>
+</html>

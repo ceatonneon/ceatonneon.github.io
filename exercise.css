@@ -1,0 +1,42 @@
+h1 {
+	color: #900;
+	font: normal 28px Tahoma, Geneva, sans-serif;
+	border-top: 2px solid #036;
+	border-bottom: 2px solid #036;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#signup {
+	background: #FFC;
+	width: 275px;
+	border: 1px solid #666;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.closed {
+	background: url(images/arrowRight.png) no-repeat 7px center;
+}
+.open {
+	background: url(images/arrowDown.gif) no-repeat 7px center;
+}
+#signup h2 {
+	background-color: #666;
+	font: normal 18px Tahoma, Geneva, sans-serif;
+	margin: 0px;
+	color: #FFF;
+	padding: 5px 10px 5px 30px;
+	cursor: pointer;
+}
+#signup form {
+	padding: 10px;
+}
+#signup form label {
+	font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	display: block;
+}
+#signup form p {
+	margin: 10px 0px 0px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A basic conditional statement</title>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#bottom').click(function() {
+          $('body').append('<p class="new">This is the end.</p>');
+          return false;
+        });
+
+        $('#before').click(function() {
+	     $('#message').before('<p class="new">Before the div.</p>');
+          return false;
+        });
+
+        $('#after').click(function() {
+          $('#message p').after('<p class = "new">Add another paragraph.</p>');
+	     return false;
+        });
+
+        $('#replace').click(function() {
+          $('#message h2').text('A new headline!');
+          return false;
+        });
+        
+      });	
+    </script>
+  </head>
+
+  <body>
+  <h1>Adding Content with jQuery</h1>
+  <p>
+  <div id="message">
+    <h2>An &lt;h2&gt; tag inside the a &lt;div&gt; with ID of message.</h2>
+    <p>This is a paragraph inside the &lt;div&gt; with the ID of message. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt excepteur sint occaecat. In reprehenderit in voluptate sunt in culpa consectetur adipisicing elit. Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.</p>
+    <form id="form1" name="form1" method="post" action="">
+      <input type="submit" name="bottom" id="bottom" value="add to bottom of <body>" />
+      <input type="submit" name="before" id="before" value="before <div> tag" />
+      <input type="submit" name="after" id="after" value="after paragraph" />
+      <input type="submit" name="replace" id="replace" value="replace <h2> content" />
+    </form>
+  </div>
+</p>
+</body>
+</html>
